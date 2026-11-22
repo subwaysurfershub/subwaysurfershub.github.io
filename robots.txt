@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subwaysurfershub.github.io/sitemap.xml
