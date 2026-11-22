@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="google-site-verification" content="HoWofmErOOKMSn8dHeXvBTb5cGoEBEB1rQ7Y3CrUYgY" />
+<meta name="google-site-verification" content="HoWofmErOOKMSn8dHeXvBTb5cGoEBEB1rQ7Y3CrUYgY" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:," />
@@ -301,6 +301,19 @@
       }
       .page-head p{color:var(--ink-soft); max-width:44rem; margin:0}
 
+      /* articles */
+      .prose h2{font-size:1.4rem; font-weight:900; color:var(--ink); margin:32px 0 8px; line-height:1.25}
+      .prose h2:first-child{margin-top:0}
+      .prose h3{color:var(--ink); margin:22px 0 6px}
+      .prose ol{color:var(--ink-soft); padding-left:22px}
+      .prose ol li{margin:6px 0}
+      .article-card{display:flex; flex-direction:column}
+      .article-card p{flex:1}
+      .read-link{font-weight:900; text-decoration:none; display:inline-block; margin-top:14px; min-height:32px}
+      .read-link:hover{text-decoration:underline}
+      .back-link{font-weight:900; text-decoration:none; display:inline-block; margin-bottom:10px; min-height:32px}
+      .back-link:hover{text-decoration:underline}
+
       /* contact */
       .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start}
       @media (max-width:860px){ .contact-grid{grid-template-columns:1fr} }
@@ -354,6 +367,7 @@
           <a href="#/home" data-route="home">Home</a>
           <a href="#/how-to-play" data-route="how-to-play">How to Play</a>
           <a href="#/tips" data-route="tips">Tips &amp; Tricks</a>
+          <a href="#/articles" data-route="articles">Articles</a>
           <a href="#/faq" data-route="faq">FAQ</a>
           <a href="#/about" data-route="about">About</a>
           <a href="#/contact" data-route="contact">Contact</a>
@@ -557,6 +571,60 @@
           </div>
         </div>
 
+        <div class="band alt">
+          <div class="wrap">
+            <h2 class="sec">Read the <span class="hl">articles</span></h2>
+            <p class="sec-sub">Longer, deeper guides from the fan team — scoring systems, board strategy, earning currency the honest way, the World Tour, and how Subway Surfers stacks up against its biggest rival.</p>
+            <div class="grid3">
+              <div class="card article-card">
+                <h3>How to Get a High Score in Subway Surfers</h3>
+                <p>The multiplier, the missions and the rooftop routes behind every seven-figure run — the complete system for turning good runs into record runs.</p>
+                <a class="read-link" href="#/high-score-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Best Characters and Hoverboards in Subway Surfers</h3>
+                <p>Characters are style, but boards are strategy. Which boards protect beginners, which ones power high-score attempts, and how board powers really work.</p>
+                <a class="read-link" href="#/best-characters-boards">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>How to Earn Coins and Keys Faster in Subway Surfers</h3>
+                <p>Daily hunts, mystery boxes, events and smart routes that fill your pockets faster — plus an honest warning about "unlimited coins" scams.</p>
+                <a class="read-link" href="#/earn-coins-keys-faster">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers World Tour Explained</h3>
+                <p>A new city every season, with its own characters, boards and hunts. How the rotation works and how to never miss the limited-time rewards.</p>
+                <a class="read-link" href="#/world-tour-explained">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers vs Temple Run: What's the Difference?</h3>
+                <p>The two giants of endless running, compared honestly: controls, camera, power-ups and progression — and which one fits the way you play.</p>
+                <a class="read-link" href="#/subway-surfers-vs-temple-run">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers Power-Ups Explained: Which to Upgrade First</h3>
+                <p>Coin Magnet, Jetpack, Super Sneakers, 2X Multiplier and Pogo Stick — what each one really does, and the upgrade order that pays you back fastest.</p>
+                <a class="read-link" href="#/powerups-explained">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers Daily Challenges and Word Hunts Explained</h3>
+                <p>How the daily word hunt works, what the letter hunts pay out, and how to keep your daily streak — and its growing rewards — alive.</p>
+                <a class="read-link" href="#/daily-challenges-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Season Hunts in Subway Surfers: How They Work</h3>
+                <p>Tokens, stages and reward tracks: how each season's hunt is structured, and how to finish the prizes you want before the season ends.</p>
+                <a class="read-link" href="#/season-hunts-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Mystery Boxes in Subway Surfers: What's Inside and When to Open Them</h3>
+                <p>Coins, keys, boosters, headstarts and hoverboards all hide in the boxes. What the reward pools hold — and whether saving boxes ever makes sense.</p>
+                <a class="read-link" href="#/mystery-boxes-explained">Read the article →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="band" style="padding-top:6px">
           <div class="wrap">
             <div class="cta">
@@ -729,6 +797,503 @@
         </div>
       </section>
 
+      <!-- ================= ARTICLES ================= -->
+      <section class="page" id="page-articles">
+        <div class="wrap">
+          <div class="page-head">
+            <h1>Articles</h1>
+            <p>Full-length guides written by the fan team, in our own words and from our own runs. Start with the high-score system, or jump straight to whichever part of the game you want to master.</p>
+          </div>
+          <div class="band" style="padding-top:26px">
+            <div class="grid2">
+              <div class="card article-card">
+                <h3>How to Get a High Score in Subway Surfers</h3>
+                <p>Your score is not really about distance — it is about the multiplier behind it. This guide walks through the whole system: finishing mission sets to reach x30, upgrading the power-ups that multiply points, stacking boosters, and the rooftop routes and survival habits that keep a big run alive long enough to matter.</p>
+                <a class="read-link" href="#/high-score-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Best Characters and Hoverboards in Subway Surfers</h3>
+                <p>Here is the honest truth most "best character" lists skip: characters do not change how you run, but hoverboard powers genuinely do. We explain what each board ability actually does, which boards forgive beginner mistakes, and which ones belong on a serious high-score attempt.</p>
+                <a class="read-link" href="#/best-characters-boards">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>How to Earn Coins and Keys Faster in Subway Surfers</h3>
+                <p>Coins and keys trickle in from ordinary runs, but the real income is structured: daily hunts, mission sets, mystery boxes, weekly events and season hunts. This article lays out the fastest honest earning routine — and explains why every "unlimited coins and keys" hack is a scam.</p>
+                <a class="read-link" href="#/earn-coins-keys-faster">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers World Tour Explained</h3>
+                <p>Every few weeks the tracks move to a new real-world city, bringing themed scenery, an event character, fresh boards and a season hunt. Here is how the rotation works, where the limited-time rewards come from, and what to prioritise before the tour moves on.</p>
+                <a class="read-link" href="#/world-tour-explained">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers vs Temple Run: What's the Difference?</h3>
+                <p>Both games defined endless running, but they play very differently: three-lane city tracks against winding jungle paths, swipe-only control against tilt steering, missions against objectives. A fair, side-by-side comparison to help you pick the runner that suits you.</p>
+                <a class="read-link" href="#/subway-surfers-vs-temple-run">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers Power-Ups Explained: Which to Upgrade First</h3>
+                <p>Five power-ups float above the tracks, and all of them can be upgraded with coins — but upgrades are not equal. This guide explains exactly what the Coin Magnet, Jetpack, Super Sneakers, 2X Multiplier and Pogo Stick do, how long they last at each level, and the priority order that turns your coins into the most value per run.</p>
+                <a class="read-link" href="#/powerups-explained">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Subway Surfers Daily Challenges and Word Hunts Explained</h3>
+                <p>Every day the game hides a word along the tracks, one letter at a time. We explain how the Daily Challenge word hunt works, how the rewards build across a week of play, what happens when you miss a day, and the simple habits that keep a streak going without marathon sessions.</p>
+                <a class="read-link" href="#/daily-challenges-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Season Hunts in Subway Surfers: How They Work</h3>
+                <p>Each World Tour stop runs a season hunt: themed tokens on the tracks, a ladder of stages, and prizes that climb toward a featured character or board. Here is how tokens, stages and rewards fit together — and how to pace your collecting so you finish before the tour moves on.</p>
+                <a class="read-link" href="#/season-hunts-guide">Read the article →</a>
+              </div>
+              <div class="card article-card">
+                <h3>Mystery Boxes in Subway Surfers: What's Inside and When to Open Them</h3>
+                <p>Mystery Boxes are the game's slot machine of generosity: coins, keys, Score Boosters, headstarts, hoverboards and character tokens all come out of them. We open up the reward pools, explain how Super Mystery Boxes differ, and settle the oldest question of all — open them straight away, or save them up?</p>
+                <a class="read-link" href="#/mystery-boxes-explained">Read the article →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: HIGH SCORE ================= -->
+      <section class="page" id="page-high-score-guide">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>How to Get a High Score in Subway Surfers</h1>
+            <p>Every record run is built the same way: a maxed multiplier, the right upgrades, boosters spent at the right moment, and routes that keep you alive at full speed. Here is the complete system.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>First, understand how your score is actually built</h2>
+            <p>Your score is not a coin count and it is not pure distance. As you run, the game awards points continuously, and those points are multiplied by your <strong>score multiplier</strong> before they are added to your total. Coins are worth a small flat amount each; survival is where the points live, because your speed — and therefore your points per second — keeps rising the longer a run lasts.</p>
+            <p>That one fact explains the huge gap between new and veteran accounts. A new player with a x1 multiplier might score 20,000 on a solid run. A veteran with a x30 multiplier, doing the exact same run with the exact same reflexes, scores thirty times as much. High scores are an account-building game first and a reflex game second.</p>
+
+            <h2>Raise your multiplier to x30 — and treat it as the main quest</h2>
+            <p>The multiplier grows through <strong>missions</strong>. Missions arrive in sets of three: typical tasks include collecting a set number of coins, jumping a number of barriers, rolling a certain number of times, scoring a target in a single run, or picking up specific power-ups. Finish all three missions in a set and your multiplier climbs by one point, up to a maximum of <strong>x30</strong>.</p>
+            <p>Three things about missions are worth knowing:</p>
+            <ul>
+              <li><strong>The multiplier is permanent.</strong> Once earned, it never goes down. Every mission set you finish improves every run you will ever do on that account.</li>
+              <li><strong>Missions shape how you play.</strong> If a set asks for rolls and jumps, play a few deliberate runs chasing those actions instead of distance. Short, focused runs finish sets faster than heroic ones.</li>
+              <li><strong>Hard missions can be skipped with coins.</strong> If one mission is blocking a set for days, paying the skip cost is often worth it — the permanent multiplier point pays you back forever.</li>
+            </ul>
+            <p>Until your multiplier is maxed, finishing mission sets should be your first goal every time you open the game. Everything else in this article multiplies on top of it.</p>
+
+            <h2>Upgrade the power-ups that multiply points</h2>
+            <p>Coins are best spent on power-up upgrades in the shop, because upgraded power-ups last longer — and duration is value. In priority order:</p>
+            <ol>
+              <li><strong>2x Multiplier.</strong> While active, it doubles your current multiplier. On a maxed account that turns x30 into x60. Longer duration here is the single biggest score upgrade in the game.</li>
+              <li><strong>Coin Magnet.</strong> It does not score directly, but it funds everything else by vacuuming up coins from all three lanes, including coins you would never safely reach.</li>
+              <li><strong>Jetpack.</strong> Time in the air is time nothing can hit you, flying through a stream of coins. Longer flights mean longer safe stretches at high speed.</li>
+              <li><strong>Super Sneakers.</strong> Bigger jumps open rooftop routes and clear obstacle combinations that would otherwise force risky lane changes. Upgrade them last of the four — they are powerful but take practice.</li>
+            </ol>
+
+            <h2>Spend boosters only on serious attempts</h2>
+            <p>Before a run you can equip <strong>Score Boosters</strong>, each adding +5 to your multiplier, and they stack. Combined with a maxed base and a 2x Multiplier power-up grabbed early in the run, your effective multiplier can reach levels that turn a good run into a personal best by a wide margin. Boosters come from mystery boxes, events and the shop — they are too valuable to burn on casual runs.</p>
+            <p>Pair them with a <strong>Headstart</strong> (or the longer Mega Headstart) on your biggest attempts. The opening stretch of a run scores slowly because your speed is still low; a Headstart rockets you past it into the fast, high-value section of the track where every second alive is worth far more.</p>
+
+            <h2>Live on top of the trains</h2>
+            <p>Ask any high scorer where they spend a run and the answer is the rooftops. Train roofs are safer than the ground for three reasons: there are fewer obstacle combinations up there, you can see further ahead so patterns are readable earlier, and the coin trails on roofs are generous. The ground is where three-lane trap patterns live; the roofs are where runs go to grow old.</p>
+            <ul>
+              <li>Use <strong>ramps</strong> to get up, and treat every ramp as an invitation unless the landing roof is clearly about to end.</li>
+              <li><strong>Jump between cars</strong> rather than dropping to the tracks between them. Roof-to-roof gaps are shorter than they look.</li>
+              <li>When a train ends, <strong>roll off the front</strong> or jump late so you land past the dead-end barrier instead of into it.</li>
+              <li>Drop down only for a power-up you genuinely need — the 2x Multiplier is worth a detour; a short Jetpack usually is not.</li>
+            </ul>
+
+            <h2>Habits that keep a long run alive</h2>
+            <p>Preparation sets your ceiling; habits decide whether you reach it. The players with the biggest scores share the same few:</p>
+            <ul>
+              <li><strong>Swipe early, not late.</strong> Input your lane change when you recognise the pattern, not when you reach it. An early swipe can be corrected with a second swipe; a late one cannot.</li>
+              <li><strong>Default to the middle lane.</strong> From the centre you are always one swipe from safety in either direction. Edge lanes leave you exactly one escape route.</li>
+              <li><strong>Cancel jumps with a roll.</strong> Swiping down in mid-air slams you back to the ground. It is the escape hatch when a jump is heading for a train that is shorter than you expected.</li>
+              <li><strong>Read the signal lights.</strong> Red lights on a track warn of an oncoming train on that line. Treat them as a countdown timer for your next move.</li>
+              <li><strong>After a board saves you, slow your decisions down.</strong> When a hoverboard absorbs a crash, the Guard is right behind you and one more stumble ends the run. Play conservatively until he falls back.</li>
+            </ul>
+
+            <h2>Know when a key revive is worth it</h2>
+            <p>Reviving with keys keeps a run — and its growing score — alive, but the key cost rises with every revive in the same run. The rule most top players follow: revive when the run is already close to your personal best, or when you are carrying a booster stack you paid for, and let ordinary runs end. A first revive on a great run is an investment; a third revive on an average run is just expensive.</p>
+            <p>Put it all together — a x30 base, upgraded power-ups, boosters saved for real attempts, rooftops as your home and early swipes as your reflex — and the seven-figure scores stop looking like magic. They are a system, and now you know it. For the quick-reference version, keep our <a href="#/tips">Tips &amp; Tricks</a> page bookmarked too.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: CHARACTERS & BOARDS ================= -->
+      <section class="page" id="page-best-characters-boards">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Best Characters and Hoverboards in Subway Surfers</h1>
+            <p>Which unlocks are actually worth your coins and keys? The honest answer starts with a fact most lists skip — then gets to the boards that genuinely change your runs.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>The honest truth about characters</h2>
+            <p>Let us save you some grinding: <strong>no character in Subway Surfers runs faster, jumps higher or scores more than any other.</strong> Jake, Tricky, Fresh and every event character share the same speed, the same jump and the same hitbox feel in practice. What differs is how they look, how they animate, their outfits, and what they cost to unlock.</p>
+            <p>That is not a disappointment — it is freedom. It means you should unlock characters because you like them, not because a list told you one was "overpowered". Pick the runner whose style keeps you coming back, and spend your strategic thinking on the equipment that actually changes gameplay: hoverboards.</p>
+
+            <h2>Choosing characters sensibly</h2>
+            <ul>
+              <li><strong>Jake</strong> is free from the first second and remains a perfectly good forever-runner. There is no gameplay reason to replace him quickly.</li>
+              <li><strong>Tricky and Fresh</strong> are the classic early coin unlocks. Tricky is usually the first purchase on a new account; Fresh costs more and makes a satisfying early savings goal.</li>
+              <li><strong>King</strong> is one of the cheaper coin unlocks and a fun second character while you save for bigger targets.</li>
+              <li><strong>Yutani</strong> is earned differently — by collecting the gadgets she drops during runs — which makes her a nice medium-term project.</li>
+              <li><strong>Event and World Tour characters</strong> are unlocked with character tokens collected during their season, or through limited offers. If you love a design, its season is the cheapest time to get it; many return later, but rarely on a schedule you can count on.</li>
+              <li><strong>Outfits</strong> are alternate looks for characters you own, unlocked with keys or tokens. Purely cosmetic — buy them with spare currency, never instead of power-up upgrades.</li>
+            </ul>
+
+            <h2>Hoverboards: where the real abilities live</h2>
+            <p>Every hoverboard shares the same base job: double-tap during a run and the board activates for <strong>30 seconds</strong>, and if you crash while it is active, the board is consumed instead of your run ending. That crash shield alone makes boards essential equipment. But many boards also carry <strong>special powers</strong>, and those powers are real gameplay:</p>
+            <ul>
+              <li><strong>Bouncer</strong> — adds a Super Sneakers-style bounce for the whole ride, so you clear tall barriers easily and land on train roofs that normal jumps cannot reach.</li>
+              <li><strong>Low Rider</strong> — keeps you permanently crouched while active, gliding under high barriers without any roll timing at all.</li>
+              <li><strong>Daredevil</strong> — a speed board that pushes your pace beyond the normal cap, scoring faster and demanding faster reactions.</li>
+              <li><strong>Teleporter</strong> — a sideways swipe zaps you instantly to the far lane instead of sliding lane by lane: the cleanest escape in the game.</li>
+              <li><strong>Monster</strong> — combines a speed boost with extra steering smoothness, making dense traffic noticeably more forgiving.</li>
+              <li><strong>Freestyler</strong> — tuned for rooftop play, with smoother landings and quick direction changes that help long train-top runs flow.</li>
+            </ul>
+            <p>Many power boards can also be <strong>upgraded</strong> in the shop, adding or improving abilities for coins and keys. An upgraded favourite board is a better investment than three unupgraded novelties.</p>
+
+            <h2>Best boards for beginners</h2>
+            <p>New players crash from two things: mistimed rolls under barriers, and panic in traffic. Choose boards that remove those problems:</p>
+            <ul>
+              <li><strong>Low Rider</strong> is the friendliest board in the game. One whole category of obstacle — anything you would normally roll under — simply stops being a threat for 30 seconds.</li>
+              <li><strong>Monster</strong> forgives steering mistakes. Its smoother control turns "I swiped too late" moments into near misses instead of crashes.</li>
+              <li><strong>Any cheap basic board</strong> still does the core job. A no-power board used as pure insurance before a dense section will save more runs than an expensive board you are afraid to activate.</li>
+            </ul>
+            <p>Beginner habit worth building early: activate your board <em>before</em> a section that looks dangerous, not in the middle of it. Insurance bought calmly works; insurance bought in a panic usually arrives half a second late.</p>
+
+            <h2>Best boards for high-score runs</h2>
+            <p>Experienced players choose boards that create score, not just safety:</p>
+            <ul>
+              <li><strong>Bouncer</strong> is the rooftop king. Permanent high jumps keep you on the roofs — the safest, most readable part of the track — for the entire ride, which is exactly where long runs live.</li>
+              <li><strong>Teleporter</strong> solves the worst pattern in the game: all three lanes blocked with no slide path between them. One swipe and you are somewhere else entirely.</li>
+              <li><strong>Daredevil</strong> is the high-risk pick. Extra speed means more points per second, and at the level where scores are decided by survival time, that matters — but only once your reactions are genuinely fast enough to handle it.</li>
+            </ul>
+
+            <h2>Building your collection without wasting currency</h2>
+            <p>Boards arrive from the shop, from mystery boxes, and as season hunt and event rewards — event boards are often free if you play their season actively. A sensible order: earn what events give you, buy Low Rider and Bouncer as your strategic staples, keep a small stock of cheap boards as consumable insurance, and upgrade the one or two boards that match how you actually play. Your coins go further on depth than on breadth — and your scores will show it. For how boards fit into a full scoring strategy, see <a href="#/high-score-guide">How to Get a High Score in Subway Surfers</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: COINS & KEYS ================= -->
+      <section class="page" id="page-earn-coins-keys-faster">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>How to Earn Coins and Keys Faster in Subway Surfers</h1>
+            <p>Coins buy your upgrades and keys save your best runs — so earning both faster changes everything. This is the fastest honest routine, built from the systems the game itself gives you.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>How the game's economy actually works</h2>
+            <p>Coins are the everyday currency: they come from runs, missions, boxes and events, and they are spent on characters, boards, outfits, power-up upgrades and mission skips. Keys are the rare currency: they revive you after a crash, unlock certain characters and outfits, and appear far less often. The players who always seem to have plenty of both are not lucky — they simply collect from every system the game offers, every day, instead of relying on run pickups alone.</p>
+
+            <h2>Finish your daily missions and mission sets</h2>
+            <p>Missions pay out in two ways: the tasks themselves often involve collecting coins, and finishing sets raises your score multiplier — which makes every future run more valuable. But missions also feed the reward pipeline: progress through the game's challenges is one of the steady sources of <strong>mystery boxes</strong>, and boxes are where a large share of free keys hide. Treat the daily mission check as the first thing you do when you open the game, not an afterthought.</p>
+
+            <h2>Do the daily hunt, every day</h2>
+            <p>The <strong>Daily Hunt</strong> (the daily word hunt) sends you after floating letters scattered along the tracks, spelling out a word of the day. Collecting them during normal runs completes the hunt and pays rewards — coins, boosters and boxes feature regularly, and the rewards grow more generous across consecutive days of a week. It costs you nothing extra: the letters appear on routes you would run anyway. The only way to lose is to not play that day, which is exactly why it is the backbone of a fast-earning routine.</p>
+
+            <h2>Chase mystery boxes — they are the real key source</h2>
+            <p>Mystery boxes and their bigger sibling, the <strong>Super Mystery Box</strong>, are randomised reward crates earned from missions, hunts, events and found during runs. Their prize pools include coins, keys, boosters, board and character tokens — which makes them, in practice, the main way free players earn keys at all. Two habits maximise them:</p>
+            <ul>
+              <li><strong>Open boxes promptly and keep earning.</strong> Boxes come from activity, so the faster you cycle missions and hunts, the more boxes flow.</li>
+              <li><strong>Value the Super Mystery Box.</strong> When the game offers one through weekly progress or events, prioritise it — its pool is weighted toward the rarer prizes, keys included.</li>
+            </ul>
+
+            <h2>Play the events and season hunts</h2>
+            <p>Every World Tour stop brings a <strong>season hunt</strong>: themed tokens scattered on the tracks that fill a reward track of coins, boxes, boards and an event character. Alongside it, limited events and weekly challenges add their own reward ladders, and finishing high in weekly high-score hunts pays out too. Events are deliberately the richest source of currency in the game — an hour spent in an active event earns more than an hour of plain running. When a new season starts, check its reward track first and aim your play at the prizes you actually want.</p>
+
+            <h2>Run coin-rich routes</h2>
+            <p>Your runs themselves earn more with a little intention:</p>
+            <ul>
+              <li><strong>Upgrade the Coin Magnet early.</strong> A longer magnet pulls in coins from all three lanes, including lines you could never safely cross to reach. It is the highest-return coin upgrade in the shop.</li>
+              <li><strong>Take every Jetpack.</strong> Jetpack flights pass through dense coin streams with zero crash risk — pure income.</li>
+              <li><strong>Follow rooftop coin trails.</strong> Roofs carry long, safe coin lines. A run spent mostly on trains, with a magnet active, earns noticeably more than the same run at ground level.</li>
+              <li><strong>Grab the rewarded offers when offered.</strong> The game periodically offers bonus coins or a second box for watching a short ad. It is optional and entirely legitimate — take it when the reward is worth thirty seconds to you.</li>
+            </ul>
+
+            <div class="callout" style="margin:22px 0">
+              <p><strong>A clear warning about "unlimited coins and keys" hacks.</strong> Websites, videos and apps promising unlimited coins, unlimited keys, mod menus or "generator" tools for Subway Surfers are scams — every single one. There is no way to edit a server-side game balance from a web page. What these offers actually do is some combination of: harvesting your account details or passwords, pushing you through endless fake "human verification" surveys that pay the scammer, installing malware or a modified APK that can steal data or wreck your device, and getting game accounts flagged or banned for cheating. If a page asks you to enter your game login anywhere except the official game and stores, or to download a "mod" from outside Google Play or the App Store, close it. The only real sources of coins and keys are playing the game and the official in-game shop — and as this article shows, playing well pays faster than most people expect.</p>
+            </div>
+
+            <h2>A simple daily routine that adds up</h2>
+            <ol>
+              <li>Open the game and check the Daily Hunt word and today's missions.</li>
+              <li>Run with the hunt letters and mission tasks as your goals — distance is a bonus, not the point.</li>
+              <li>Collect any ready rewards and open your mystery boxes.</li>
+              <li>If an event or season hunt is active, spend your remaining runs there.</li>
+              <li>Spend coins in a fixed order: Coin Magnet upgrades, other power-up durations, then characters and boards you genuinely want. Save keys for revives on near-best runs and unlocks you love — never for routine runs.</li>
+            </ol>
+            <p>None of this is glamorous, and that is the point: the game's economy rewards consistency far more than any single marathon session. Show up daily, collect from every system, and your coin balance — and your key stash — will grow faster than any "hack" ever promised, without risking your account or your phone.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: WORLD TOUR ================= -->
+      <section class="page" id="page-world-tour-explained">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Subway Surfers World Tour Explained</h1>
+            <p>One game, dozens of cities. How the World Tour rotation works, what each stop adds, and how event characters and boards are earned before the tour moves on.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>What the World Tour is</h2>
+            <p>The World Tour is Subway Surfers' seasonal structure — and a big reason the game still feels fresh more than a decade after launch. Instead of one permanent subway, the game's setting travels: each new version of the game is themed around a real-world city, and the chase moves there for the length of that season. Over the years the tour has stopped in cities on every continent, from New York, London and Paris to Tokyo, Mumbai, Cairo, Sydney and many more, including special seasonal stops for occasions like Halloween and the winter holidays.</p>
+            <p>Your progress, collection, coins, keys and multiplier all travel with you. Only the scenery, the featured content and the seasonal goals change.</p>
+
+            <h2>How the rotation works</h2>
+            <p>A new stop arrives with a game update, typically every few weeks — roughly monthly, varying a little with the calendar and special events. When the update lands, the previous city's theme is replaced: the tracks are redecorated in the new city's colours and landmarks, its themed content takes over the shop and events, and a new season hunt begins. When that season ends, the tour moves on again, and the cycle repeats.</p>
+            <p>Two practical consequences follow. First, the game quietly expects you to update: events and hunts only run on the current version. Second, everything seasonal runs on a deadline — which is why knowing what each stop offers, and what you want from it, matters more than raw playing time.</p>
+
+            <h2>What each city brings</h2>
+            <ul>
+              <li><strong>A themed setting.</strong> The tracks, trains, tunnels and skyline are dressed for the destination — local architecture, colours, festival decorations and landmarks worked into the scenery you sprint past.</li>
+              <li><strong>A featured character.</strong> Most stops introduce a new runner inspired by the city — its style, sports, music or folklore — often with additional outfits.</li>
+              <li><strong>Themed hoverboards.</strong> New boards matching the city's theme, sometimes with special powers, join the shop and the season's rewards.</li>
+              <li><strong>A season hunt.</strong> Themed tokens (a city's icons, foods, symbols or festival items) are scattered along the tracks; collecting them fills a reward track that pays out coins, boxes, boards and usually the featured character.</li>
+              <li><strong>Limited events and offers.</strong> Many stops add side events, special challenges and bundle offers that exist only for that season.</li>
+            </ul>
+
+            <h2>Event characters and boards: how to get them</h2>
+            <p>The main route is the <strong>season hunt</strong>: play runs, collect the themed tokens, and advance along the reward track — the featured character and board are typically prizes on that track, free for players who collect enough during the season. Some items also appear in the shop for coins, keys or tokens, and in limited-time bundles for real money; those are conveniences, not requirements.</p>
+            <p>If you miss something, do not despair-buy. The tour revisits popular cities and re-runs fan-favourite content from time to time, and past event items periodically resurface in later events, offers and special sales. Missing a season means waiting, not losing forever — though nothing is guaranteed, so if you truly love a character, their own season is the time to prioritise them.</p>
+
+            <h2>What happens when the tour moves on</h2>
+            <p>Everything you earned stays yours: characters, boards, outfits, coins, keys and upgrades are permanent. What disappears is only the opportunity — the old hunt ends, its unredeemed tokens stop spawning, and the shop rotates to the new city. Your multiplier and missions carry on untouched, and the core game (controls, power-ups, scoring) does not change between stops. Think of each city as a themed layer on top of the same game, not a reset.</p>
+
+            <h2>Making the most of every stop</h2>
+            <ol>
+              <li><strong>Update promptly and read the season's offers.</strong> On day one, open the season hunt and see the full reward track. Decide which prizes you actually want.</li>
+              <li><strong>Aim your runs at tokens.</strong> Hunt tokens spawn on the tracks during normal play; steady daily runs complete reward tracks far more reliably than one weekend marathon.</li>
+              <li><strong>Watch the end date.</strong> In the final days of a season, focus entirely on finishing the reward steps you are close to — partial progress expires with the city.</li>
+              <li><strong>Spend keys carefully mid-season.</strong> Event bundles can be tempting, but keys spent on a cosmetic you half-want are keys missing from a high-score revive later. Buy with intention.</li>
+            </ol>
+            <p>The World Tour is, in the end, a simple and generous idea: the same beloved chase, re-skinned by the world's great cities, with a fresh set of collectables to chase every few weeks. Play steadily, pick your prizes, and the tour will fill your collection almost by itself. Pair it with the earning routine in <a href="#/earn-coins-keys-faster">How to Earn Coins and Keys Faster</a> and you will rarely miss a stop's best rewards.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: VS TEMPLE RUN ================= -->
+      <section class="page" id="page-subway-surfers-vs-temple-run">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Subway Surfers vs Temple Run: What's the Difference?</h1>
+            <p>They launched a year apart and together defined mobile endless running. But play them back to back and they feel surprisingly different — here is a fair comparison.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>Two pioneers, one genre</h2>
+            <p>Temple Run (2011, Imangi Studios) and Subway Surfers (2012, SYBO and Kiloo) are the two games that turned "swipe to dodge, run forever" into a mobile institution. In both, you sprint forward automatically from a behind-the-runner view, dodge obstacles, grab coins and try to survive as the speed climbs. That shared skeleton is real — but nearly everything built on it differs, from how the track is shaped to how the controls feel in your hands.</p>
+
+            <h2>The view and the world</h2>
+            <p><strong>Subway Surfers</strong> runs on three straight, parallel train tracks through bright, colourful cities. The world is playful — graffiti, sunshine, rooftops — and the straight lanes make the road ahead unusually readable: you can see patterns forming far in advance and plan two or three moves ahead. The setting also changes constantly through the World Tour, so the scenery rotates through real-world cities every season.</p>
+            <p><strong>Temple Run</strong> sends you down a single winding jungle path that bends left and right around corners. The camera swings with the path, the ruins and cliffs feel moodier and more dangerous, and the challenge comes less from reading lanes and more from reacting to what appears around the next bend. Where Subway Surfers is about planning, Temple Run is about reflexes at the edge of sight.</p>
+
+            <h2>Controls: swipes only, or swipes plus tilt</h2>
+            <p>Subway Surfers is controlled entirely with four swipes — left and right to change lanes, up to jump, down to roll — plus a double-tap for your hoverboard. It plays identically one-handed, on a train, anywhere, because your phone never has to move.</p>
+            <p>Temple Run uses swipes for jumping, sliding and turning corners, but adds <strong>tilt controls</strong>: you physically lean your device to steer within the path and to sweep up coin lines positioned to the left or right. Many players find tilt immersive and precise; others find it tiring or awkward in public. It is the single biggest feel difference between the two games, and most people strongly prefer one style or the other within ten minutes of trying both.</p>
+
+            <h2>Obstacles and power-ups</h2>
+            <p>In Subway Surfers the threats are trains (parked and oncoming), barriers you jump or roll under, and dead ends — answered by power-ups like the Jetpack, Coin Magnet, Super Sneakers and 2x Multiplier, by hoverboards that absorb one crash, and by keys that revive you after a crash at a rising cost.</p>
+            <p>In Temple Run the threats are gaps, fire traps, tree roots, sharp turns and the demon monkeys behind you — answered by power-ups such as shields, coin magnets, boosts and resurrection items, with gems serving as the revive currency. The flavour differs (urban vs jungle, boards vs artefacts), but the deeper difference is structural: Subway Surfers' three lanes let obstacles combine into patterns, while Temple Run's single path strings obstacles into sequences where one mistake often forces the next.</p>
+
+            <h2>Progression and goals</h2>
+            <p>Subway Surfers progression runs through <strong>missions</strong>: completing mission sets permanently raises your score multiplier to x30, so your account itself grows stronger, and seasons add collectable characters, boards and hunt rewards on top. A veteran's score advantage over a beginner is enormous and permanent.</p>
+            <p>Temple Run progression runs through <strong>objectives</strong> — achievements that raise your multiplier as you level up — plus unlockable characters and power-up upgrades bought with coins. Its structure is simpler and more self-contained: fewer collections, fewer events, less seasonal machinery, and a purer focus on distance and score per run.</p>
+
+            <h2>Which one suits which player?</h2>
+            <ul>
+              <li><strong>Choose Subway Surfers if</strong> you like planning ahead, collecting characters and boards, chasing missions, and a game that refreshes itself with new cities and events. It rewards strategy and steady daily play, and its swipe-only controls work anywhere.</li>
+              <li><strong>Choose Temple Run if</strong> you prefer raw reaction challenges, a tenser atmosphere, and tilt steering that makes your whole body part of the game. It rewards nerve and focus, run by run, with less collection management around it.</li>
+              <li><strong>Choose both if</strong> you love the genre — honestly, most endless-runner fans do. They scratch genuinely different itches: one is a chess-like lane puzzle at speed, the other is a reflex gauntlet through the jungle.</li>
+            </ul>
+            <p>Whichever you pick, the fundamentals transfer: look ahead, not at your character; decide early; and never blame the swipe you did not make. And if you land on the Subway Surfers side of the fence, our <a href="#/high-score-guide">high-score guide</a> will turn those first runs into a system for record scores.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: POWER-UPS ================= -->
+      <section class="page" id="page-powerups-explained">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Subway Surfers Power-Ups Explained: Which to Upgrade First</h1>
+            <p>Five power-ups float above the tracks, and every one of them can be upgraded in the shop. This guide explains what each one actually does — and the order to upgrade them in so your coins work hardest.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>How power-ups work</h2>
+            <p>Power-ups appear as glowing icons hovering above the tracks during a run. Touch one and it activates immediately — there is no inventory and no saving them for later. Each one lasts for a set number of seconds, shown by a shrinking timer bar on screen, and each can be <strong>upgraded in the shop</strong> with coins. Upgrades raise the duration level by level, up to a maximum level, and duration is the whole point: a power-up that lasts twice as long is, in practice, twice as valuable. Because upgrades get more expensive as they climb, the order you buy them in matters — especially for new accounts where coins are scarce.</p>
+
+            <h2>Coin Magnet: the engine of your income</h2>
+            <p>The Coin Magnet pulls every coin within reach — including coins on the lanes either side of you — straight into your runner for its full duration. It does not score points directly, but it quietly transforms your economy: coin lines you could never safely cross to collect become yours anyway, rooftop trails pay out in full, and tunnel sections turn into windfalls.</p>
+            <p><strong>Upgrade priority: first.</strong> The Magnet funds everything else in the game — your other upgrades, your boards, your characters. Every extra second of magnet time pays you back on every single run, forever. Max this before anything else and the rest of the shop gets cheaper in real terms.</p>
+
+            <h2>Jetpack: free coins and total safety</h2>
+            <p>Grab a Jetpack and you blast high above the tracks into a stream of coins laid out in the sky. Nothing up there can hurt you — no trains, no barriers, no dead ends — so a Jetpack is simultaneously a coin harvest and a guaranteed safe stretch at whatever speed your run has reached. At high speed, late in a long run, that safety is worth as much as the coins.</p>
+            <p><strong>Upgrade priority: second.</strong> Longer flights mean longer untouchable stretches and more coins per pickup. It pairs beautifully with the Magnet habit of rooftop running: fly, land back on a roof, and keep the run's safest rhythm going.</p>
+
+            <h2>2X Multiplier: the score king</h2>
+            <p>The 2X Multiplier doubles your current score multiplier for its duration. On a new account with a x3 multiplier, that is a modest bump. On a finished account with the maximum x30 base, it turns your scoring into x60 — which is why every record run you have ever seen was built around grabbing this power-up and keeping the run alive while it ticks.</p>
+            <p><strong>Upgrade priority: third — but first if you chase scores.</strong> Its value scales with your mission progress. If your base multiplier is still low, finish mission sets first and upgrade the 2X after; if your multiplier is already high, longer 2X duration is the single biggest scoring upgrade in the shop, and it stacks with pre-run Score Boosters for the truly huge numbers described in our <a href="#/high-score-guide">high-score guide</a>.</p>
+
+            <h2>Super Sneakers: power with a learning curve</h2>
+            <p>Super Sneakers give you enormous, springy jumps. You clear double barriers in one bound, sail over gaps, and land on train roofs that a normal jump cannot reach — rooftops being the safest and richest part of the track. The trade-off is control: the extra height changes your timing, floats you over coins you meant to collect, and can carry you into a landing you did not plan. New players often crash <em>more</em> with Sneakers on than off.</p>
+            <p><strong>Upgrade priority: fourth.</strong> They are genuinely powerful once your routing is confident, but they reward skill you may not have yet. Learn the tracks first; upgrade the Sneakers when bouncing onto roofs feels like a plan rather than an accident.</p>
+
+            <h2>Pogo Stick: short, wild, and situational</h2>
+            <p>The Pogo Stick bounces you sky-high in a series of huge hops, scattering coins at the top of each bounce and carrying you clean over everything below. It is the rarest of the five spawns and the hardest to steer — you land where the bounce takes you. Treat it as a brief, chaotic bonus: fun, occasionally a lifesaver over a trap pattern, but never something to build a strategy around.</p>
+            <p><strong>Upgrade priority: last.</strong> Its short duration and unpredictability mean extra seconds here buy you far less than extra seconds on the Magnet, Jetpack or 2X. Upgrade it with spare coins once the important four are done.</p>
+
+            <h2>The upgrade order, in one list</h2>
+            <ol>
+              <li><strong>Coin Magnet</strong> — pays for everything else; max it first.</li>
+              <li><strong>Jetpack</strong> — safe coins and breathing room at any speed.</li>
+              <li><strong>2X Multiplier</strong> — the score multiplier that matters once your missions are done.</li>
+              <li><strong>Super Sneakers</strong> — rooftop access, once your control is ready for it.</li>
+              <li><strong>Pogo Stick</strong> — a novelty; finish it last with leftover coins.</li>
+            </ol>
+            <p>One last piece of shop discipline: resist spreading coins thinly across all five at once. A single power-up at maximum duration changes how every run feels; five power-ups at half duration change almost nothing. Go deep in the order above, and each finished upgrade will make the next one arrive sooner.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: DAILY CHALLENGES ================= -->
+      <section class="page" id="page-daily-challenges-guide">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Subway Surfers Daily Challenges and Word Hunts Explained</h1>
+            <p>Every day, the game hides a word along the tracks. Here is how the Daily Challenge works, what it pays, and how to keep the streak — and its growing rewards — alive.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>What the Daily Challenge is</h2>
+            <p>The Daily Challenge — often called the <strong>word hunt</strong> or Daily Hunt — is Subway Surfers' daily goal. Each day, the game picks a short word connected to the game or the current World Tour city, and scatters its letters along the tracks as floating pickups. Your job is simply to run and collect the letters, in runs, until the word is complete. There is no separate mode to enter and nothing special to equip: the letters appear during ordinary play, on ordinary runs.</p>
+            <p>You can check today's word, and how much of it you have found, from the Daily Challenge panel on the game's home screen. A fresh word arrives every day, whether or not you finished yesterday's.</p>
+
+            <h2>How the word hunt works, step by step</h2>
+            <ol>
+              <li><strong>Open the game and read the word.</strong> Knowing the word tells you how many letters you are hunting — short words are a couple of runs' work; longer ones take a few more.</li>
+              <li><strong>Run as normal.</strong> Letters float above the tracks at intervals, usually along readable routes. They are placed generously: you do not need a heroic run, just steady ones.</li>
+              <li><strong>Collect letters across as many runs as it takes.</strong> Progress is kept between runs. A letter grabbed in a thirty-second run counts exactly as much as one from a ten-minute run.</li>
+              <li><strong>Complete the word to claim the reward.</strong> When the final letter lands, the day's prize is yours — typically a mystery box or a bundle of coins and boosters.</li>
+            </ol>
+            <p>Because progress carries over between runs, the hunt suits short sessions perfectly. Two or three casual runs spread across a day will finish most words without you ever "grinding" for them.</p>
+
+            <h2>What the rewards are — and how they grow</h2>
+            <p>The daily prize is usually a <strong>mystery box</strong> — the game's reward crate that can contain coins, keys, Score Boosters, headstarts, board and character tokens — or direct currency and boosters. The important part is the pattern across a week: completing the challenge on consecutive days builds toward better weekly rewards, with the biggest prize of the cycle — a <strong>Super Mystery Box</strong>, whose pool is weighted toward rarer rewards including keys — waiting for players who complete the full run of days.</p>
+            <p>In other words, the word hunt is not really paying you for today's word. It is paying you for showing up. A single day's box is nice; a full week's cycle, repeated week after week, is one of the main engines of a free player's income, as we break down in <a href="#/earn-coins-keys-faster">How to Earn Coins and Keys Faster</a>.</p>
+
+            <h2>Keeping your streak alive</h2>
+            <ul>
+              <li><strong>Make it the first thing you check.</strong> Open the game, read the word, and let your warm-up runs double as letter runs. Habits beat motivation.</li>
+              <li><strong>Short runs count.</strong> On a busy day, one quick run or two may be all a short word needs. Five unglamorous minutes protects the whole week's progress.</li>
+              <li><strong>Do not save it for the evening.</strong> The word resets with the new day. Players lose streaks to "I'll do it later" far more than to hard words — a morning run removes the risk entirely.</li>
+              <li><strong>Letters first, score second.</strong> On hunt runs, follow the letters' route even if it is not your best scoring line. The streak is worth more than one run's points.</li>
+              <li><strong>If you miss a day, just restart.</strong> A broken streak costs you the weekly build-up, nothing else — no punishment, no lost collection. The next word is already waiting, and the cycle begins again immediately.</li>
+            </ul>
+
+            <h2>How the Daily Challenge fits the bigger game</h2>
+            <p>The word hunt is one of three daily rhythms that quietly run Subway Surfers: <strong>daily missions</strong> that feed your score multiplier, the <strong>Daily Challenge</strong> that feeds your boxes and boosters, and the <strong>season hunt</strong> that feeds your collection. None of them demands long sessions — together they ask for maybe fifteen focused minutes a day — but players who keep all three ticking over progress startlingly faster than players who only chase distance. The word hunt is the easiest of the three to keep perfect, which is exactly why it is the best place to build the habit.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: SEASON HUNTS ================= -->
+      <section class="page" id="page-season-hunts-guide">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Season Hunts in Subway Surfers: How They Work</h1>
+            <p>Every World Tour stop brings a season hunt: themed tokens on the tracks and a ladder of prizes waiting above them. Here is how the system works — and how to finish it before the season ends.</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>What a season hunt is</h2>
+            <p>A season hunt is the reward structure that runs alongside each stop of the <a href="#/world-tour-explained">World Tour</a>. When a new city arrives, it brings a set of themed collectable items — tokens styled after the destination, such as its foods, landmarks, symbols or festival objects — and scatters them along the tracks. Collecting tokens during normal runs fills a <strong>reward track</strong>: a ladder of prizes that you climb, stage by stage, for the length of the season. When the tour moves to the next city, the hunt ends and a new one begins.</p>
+            <p>Like the daily word hunt, there is no separate mode. You hunt by doing the thing you were already doing — running — with one eye on the tokens.</p>
+
+            <h2>Tokens: what you are collecting</h2>
+            <p>Hunt tokens appear as distinctive floating icons above the tracks, mixed in among the coins and power-ups. They spawn steadily throughout runs rather than in rare bursts, so progress is a matter of total playtime and route choice rather than luck. A few practical notes:</p>
+            <ul>
+              <li><strong>Tokens are per-season.</strong> They belong to the current hunt only. When the season ends, unspent progress does not carry into the next city's hunt.</li>
+              <li><strong>They spawn on ordinary routes.</strong> You will collect plenty just by playing; deliberately following token lines when you see them speeds things up noticeably.</li>
+              <li><strong>Longer runs collect more per run</strong>, simply because you pass more track — but several short runs collect just as well across a day.</li>
+            </ul>
+
+            <h2>Stages and the reward track</h2>
+            <p>The reward track is divided into <strong>stages</strong>, each unlocked by collecting a set number of tokens — and each stage costing more tokens than the one before. The prizes escalate in the same direction: early stages pay out modest, useful things like coin bundles and mystery boxes, middle stages add boosters, headstarts and bigger boxes, and the final stages hold the prizes the season is really about — typically the featured <strong>event character</strong>, a themed <strong>hoverboard</strong>, or both, sometimes with an outfit.</p>
+            <p>This shape is deliberate. Casual players who run a little each day will clear the early and middle stages without trying. The top of the track is reserved for players who play steadily across the whole season — which is why pacing, covered below, matters more than intensity.</p>
+
+            <h2>How long you have — and what "the end" means</h2>
+            <p>A hunt lasts exactly as long as its World Tour stop: typically a few weeks, ending when the next update moves the tour on. The game's hunt screen shows the time remaining, and it deserves a glance every few days. When the season ends:</p>
+            <ul>
+              <li><strong>Everything you already earned is permanent.</strong> Characters, boards, boxes and currency you claimed stay in your account forever.</li>
+              <li><strong>Unfinished stages are gone.</strong> Partial progress toward the next stage, and the stages above it, expire with the city.</li>
+              <li><strong>The tokens stop spawning</strong> and are replaced by the new city's items. There is no exchange or refund for tokens left uncollected.</li>
+            </ul>
+
+            <h2>Finishing before the season ends: a pacing plan</h2>
+            <ol>
+              <li><strong>Read the whole track on day one.</strong> Open the hunt, see every stage, and decide which prizes you actually want. Not every season needs a full clear — sometimes the board at stage eight matters to you and the character at the top does not.</li>
+              <li><strong>Set a daily token pace.</strong> Divide the tokens your target stage needs by the days remaining. Steady daily progress beats weekend marathons, because the later stages are priced for consistency.</li>
+              <li><strong>Combine goals.</strong> Hunt runs can simultaneously finish daily missions and the day's word hunt. One session, three systems progressing — this is how efficient players clear tracks "without trying".</li>
+              <li><strong>Recheck the countdown in the final week.</strong> If you are close to a prize you want, focus your runs entirely on tokens: follow their lines, take the longer runs, and let score goals wait.</li>
+              <li><strong>Accept the final-stage decision honestly.</strong> In the last days, if the remaining gap needs more play than you will enjoy, let it go. Event items frequently return in later seasons and offers, as we explain in the <a href="#/world-tour-explained">World Tour guide</a> — a game should never feel like a deadline at work.</li>
+            </ol>
+
+            <h2>Season hunts vs daily challenges</h2>
+            <p>It helps to keep the two systems straight. The <strong>Daily Challenge</strong> resets every day, pays in boxes and boosters, and rewards an unbroken streak across a week. The <strong>season hunt</strong> runs for weeks, pays in collection items — characters and boards — and rewards total steady progress rather than streaks. One keeps your resources flowing; the other fills your locker. Play both, and the game's whole reward economy is working for you at once.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE: MYSTERY BOXES ================= -->
+      <section class="page" id="page-mystery-boxes-explained">
+        <div class="wrap">
+          <div class="page-head">
+            <a class="back-link" href="#/articles">← All articles</a>
+            <h1>Mystery Boxes in Subway Surfers: What's Inside and When to Open Them</h1>
+            <p>Coins, keys, boosters, headstarts and whole hoverboards come out of these little crates. Here is what the reward pools really hold, how Super Mystery Boxes differ, and the answer to the oldest question: open now, or save them up?</p>
+          </div>
+          <div class="band prose" style="padding-top:22px">
+            <h2>What a Mystery Box is</h2>
+            <p>A Mystery Box is a randomised reward crate. You earn them constantly — from completing missions, finishing the daily word hunt, climbing season hunt stages, progressing through weekly challenges, and occasionally finding them during runs themselves. Opening one is free and instant: tap it, and the game draws a prize from the box's reward pool and adds it to your account. There is no choice to make inside the box and no way to influence the draw — the only real decisions are earning more of them, and the timing question we settle at the end of this article.</p>
+
+            <h2>What's inside: the reward pool</h2>
+            <p>A standard Mystery Box can contain any of the following:</p>
+            <ul>
+              <li><strong>Coins</strong> — the most common prize, in bundles that keep your upgrade savings moving.</li>
+              <li><strong>Keys</strong> — uncommon, and the reason boxes matter so much: they are one of the main sources of free keys in the game, as we cover in <a href="#/earn-coins-keys-faster">How to Earn Coins and Keys Faster</a>.</li>
+              <li><strong>Score Boosters</strong> — the +5 multiplier items you equip before a run; a stockpile of these is what serious high-score attempts are built on.</li>
+              <li><strong>Headstarts</strong> — including the longer Mega Headstart, which rockets you past the slow opening of a run into the fast, high-value track.</li>
+              <li><strong>Hoverboards</strong> — yes, whole boards can drop from boxes, which is why regular box-openers often own boards they never bought.</li>
+              <li><strong>Character tokens</strong> — collectable pieces toward unlocking specific characters, including ones tied to events.</li>
+              <li><strong>Trophies and collectables</strong> — seasonal and decorative items that fill out collections during events.</li>
+            </ul>
+            <p>The pool is weighted: coins are common, keys and boards are rare, and most boxes land somewhere useful in between. Judged one at a time, a box is a small thing. Judged across the dozens an active player opens each month, boxes are one of the game's core income systems.</p>
+
+            <h2>Super Mystery Boxes: the bigger sibling</h2>
+            <p>The <strong>Super Mystery Box</strong> works the same way but draws from a richer pool: larger coin bundles, better odds on keys, more boosters and headstarts, and the rarer collection items. Supers are earned more slowly — through completing the full weekly cycle of daily challenges, finishing high in weekly hunts, and reaching the upper stages of events and season hunts. Because they are scarce and their pool is weighted toward the prizes players actually want, earning a Super is always worth prioritising when the game dangles one: finish the weekly streak, climb the event ladder, and it arrives.</p>
+
+            <h2>Headstarts and hoverboards from boxes</h2>
+            <p>Two box prizes deserve a second look because players undervalue them. <strong>Headstarts</strong> feel like a consolation prize until you use one properly: on a high-score attempt with a maxed multiplier and boosters equipped, skipping the slow opening stretch is worth a surprising number of points, and box-earned headstarts mean your serious runs never have to start from a crawl. <strong>Hoverboards</strong> from boxes are pure profit — every board is 30 seconds of crash insurance you did not spend coins on, and power boards that drop this way (they do, occasionally) are among the best free prizes in the game. A "boring" box is rarely as boring as it looks.</p>
+
+            <h2>When to open them: now, or save them up?</h2>
+            <p>The honest answer: <strong>open them as you earn them.</strong> Here is the reasoning:</p>
+            <ul>
+              <li><strong>Saving does not improve the odds.</strong> A box's prize is drawn from its pool when opened, and nothing about hoarding ten boxes makes any of them luckier. There is no bonus for opening in bulk.</li>
+              <li><strong>The prizes are most useful now.</strong> Coins fund the upgrade you are saving for today; boosters and headstarts only earn their value when spent on runs; a board in your inventory protects your next run, not a hypothetical future one.</li>
+              <li><strong>Keys compound.</strong> A key earned today can save today's near-record run. The same key sitting unopened in a box saves nothing.</li>
+              <li><strong>The one exception is fun.</strong> Some players simply enjoy opening a stack of boxes at the end of a week, and that is a perfectly good reason — it is a game. Just know it is entertainment, not strategy.</li>
+            </ul>
+
+            <h2>How to earn boxes faster</h2>
+            <p>Since opening strategy is simple, earning strategy is where the gains are. Boxes flow from activity: finish your <a href="#/daily-challenges-guide">daily word hunt</a> (its prize is very often a box, and its weekly cycle ends in a Super), complete mission sets, climb the <a href="#/season-hunts-guide">season hunt</a> stages, and play the weekly challenges and events. Players who keep those systems ticking open boxes several times a week without ever thinking about it — and their key counts, booster stockpiles and board collections quietly show the difference.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- ================= ABOUT ================= -->
       <section class="page" id="page-about">
         <div class="wrap">
@@ -878,7 +1443,7 @@
 
     <script>
       (function () {
-        var routes = ["home", "how-to-play", "tips", "faq", "about", "contact", "privacy", "terms", "disclaimer"];
+        var routes = ["home", "how-to-play", "tips", "faq", "about", "contact", "privacy", "terms", "disclaimer", "articles", "high-score-guide", "best-characters-boards", "earn-coins-keys-faster", "world-tour-explained", "subway-surfers-vs-temple-run", "powerups-explained", "daily-challenges-guide", "season-hunts-guide", "mystery-boxes-explained"];
         var navLinks = document.getElementById("navLinks");
         var burger = document.getElementById("burger");
 
